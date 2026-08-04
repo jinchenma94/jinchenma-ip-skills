@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "jinchenma",
+  "displayName": "金尘马 Jinchenma",
+  "style": "jinchenma-surrealism",
+  "assets": {
+    "turnaround": "assets/turnaround.png"
+  },
+  "characterSpec": "references/character-spec.md",
+  "license": "CC-BY-4.0",
+  "attribution": {
+    "name": "金尘马 or Jinchenma"
+  }
+}

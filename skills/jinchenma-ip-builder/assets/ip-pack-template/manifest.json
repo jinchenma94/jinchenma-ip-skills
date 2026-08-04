@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "<ip-id>",
+  "displayName": "<display-name>",
+  "style": "jinchenma-surrealism",
+  "assets": {
+    "turnaround": "assets/turnaround.png"
+  },
+  "characterSpec": "references/character-spec.md",
+  "license": "private"
+}
