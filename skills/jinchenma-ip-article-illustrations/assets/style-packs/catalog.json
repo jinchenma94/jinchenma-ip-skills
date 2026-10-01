@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "defaultStyle": "jinchenma-3d",
+  "styles": {
+    "jinchenma-3d": "jinchenma-3d/manifest.json",
+    "jinchenma-surrealism": "jinchenma-surrealism/manifest.json"
+  }
+}

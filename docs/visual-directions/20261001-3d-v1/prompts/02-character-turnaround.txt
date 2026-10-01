@@ -1,0 +1,14 @@
+Reference bindings for reuse (paths relative to this prompt file):
+Input image 1: ../../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png
+Input image 2: ../../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png
+Palette: ../palette.json
+Record note: the body below preserves the generation brief with palette wording localized. The bindings above were added during migration for self-contained reuse; historical input file hashes were not recorded. These bindings do not prove byte-for-byte identity with the original inputs.
+
+--- Generation brief ---
+
+Use case: stylized-concept. Asset: Jinchenma 3D character multi-view identity study.
+Input image 1 (the new clean character) defines the selected 3D appearance, face, materials and garment identity. Input image 2 (original 2D front/side/back sheet) is a supporting identity/proportion cross-check only, NOT a rendering style or background reference.
+Create one wide landscape character sheet of the SAME adult man, shown in three equally sized full-body orthographic views arranged left to right: front, side, back. Each view is one angle of the same Jinchenma, not three different characters. Neutral relaxed standing pose, consistent head/body and leg proportions with input 1; fully visible hair, hands and feet with space between views.
+Keep the new gently dimensional mature editorial character appearance, matte surfaces, soft restrained lighting, natural skin, black tousled short hair, dark rectangular sunglasses, dark short-sleeve botanical shirt with gold and green motifs and a few orange details, matching gold/green knee-length shorts, black rounded rectangular smartwatch only on HIS OWN LEFT WRIST, black wide one-band slide sandals with exposed toes and open heels. Never use Y straps or toe posts. Rear view shows the same hair, outfit and left wrist placement, no new pockets, accessories or labels. Garment motifs adapt naturally to the visible surface and remain consistent in scale and colors.
+Base palette follows this candidate palette: #1A1A1A ink, #F7C948 gold, #1F8F4B green, very small #FF8A3D orange; keep natural skin and tonal lighting variations.
+Pure white background from edge to edge. Three characters with ample whitespace, no gray floor, no glow, no full scene, no text/headings/view labels/color chips, no podium, no watermark. Preserve adult body ratio; no cute enlarged head, toy proportions or photographic person. This is an image-based 3D-feel direction study, not a three-dimensional model.

@@ -1,0 +1,8 @@
+Reference bindings for reuse (paths relative to this prompt file):
+Input image 1: ../history/character-clean.png
+Palette: ../palette.json
+Record note: the body below preserves the generation brief with palette wording localized. The bindings above were added during migration for self-contained reuse; historical input file hashes were not recorded. These bindings do not prove byte-for-byte identity with the original inputs.
+
+--- Generation brief ---
+
+Edit target: the supplied Jinchenma 3D character image. Change ONLY the background and cutout boundary. Remove the broad brown/golden glow and all fog, gradients, shadows or colored pixels outside the person's actual silhouette. Return the same single full-body person on a genuinely transparent background, with a clean alpha edge suitable for compositing on white. Interior person surfaces should be fully opaque, preserving all existing skin, shirt, shorts, hands, hair, sunglasses, smartwatch on his own left wrist, and black single-strap slides. Keep his exact face, adult proportions, pose, outfit pattern, material finish, lighting on the person and colors unchanged. Do not redraw or restyle the person. No added ground shadow, props, labels, text or background.

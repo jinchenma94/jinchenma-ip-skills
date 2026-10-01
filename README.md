@@ -2,7 +2,7 @@
 
 [English document](README.en.md)
 
-用一个稳定、可复用的人物 IP，为文章持续生成统一、有辨识度的超现实主义插图。
+用稳定、可复用的人物 IP 为文章生成统一、有辨识度的插图。默认采用柔和 3D 画风；旧版 2D 超现实隐喻画风独立保留，明确选择时使用。
 
 这个仓库包含两个可以独立或配合使用的 Agent Skills：你可以直接使用内置金尘马为文章配图，也可以先从照片创建自己的个人 IP，再让它成为文章中的固定角色。
 
@@ -12,11 +12,21 @@
 
 `jinchenma-ip-builder` 将人物整理成正面、侧面和背面统一的三视图，为后续持续生成同一角色提供稳定参考。
 
-![金尘马个人 IP 正面、侧面和背面三视图](skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png)
+![金尘马个人 IP 正面、侧面和背面三视图](skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/turnaround.png)
 
 ### 文章插图效果
 
-`jinchenma-ip-article-illustrations` 使用同一个金尘马人物，把文章观点转化为简洁、克制并带有超现实关系的插图。
+`jinchenma-ip-article-illustrations` 默认采用用户确认的柔和立体体块、哑光质感、白底留白和有限配色。
+
+![3D 插图：写下想法](skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/01-write-an-idea.png)
+
+![3D 插图：搭建雏形](skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/02-build-a-prototype.png)
+
+![3D 插图：观察悬浮的书](skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/03-observe-a-floating-book.png)
+
+### 保留的旧版 2D 超现实插图
+
+下面的旧版人物、画风和样图完整保留，默认不启用。
 
 <table>
   <tr>
@@ -28,6 +38,12 @@
     <td width="50%"><img src="docs/images/jinchenma-article-illustration-answer-knowledge-loop.png" alt="金尘马文章插图：一次回答与长期知识积累"></td>
   </tr>
 </table>
+
+## 已确认的视觉方向与过程资料
+
+[3D 视觉与配色候选 v1](docs/visual-directions/20261001-3d-v1/README.md) 包含人物、三视图、场景样图、独立配色和[浏览器预览](docs/visual-directions/20261001-3d-v1/preview.html)。这些是带立体感的二维 PNG，已获用户确认并接入默认人物和画风。原候选资料继续保留用于追溯。
+
+[文章插图画风样图 v1](docs/visual-directions/20261001-illustration-style-v1/README.md) 展示已确认的三个测试场景，可打开[样图预览](docs/visual-directions/20261001-illustration-style-v1/preview.html)比较。
 
 ## 两种使用方式
 
@@ -61,7 +77,9 @@
 - 保持人物外貌、服装、配件和标志性特征一致。
 - 支持内置金尘马和用户自己的个人 IP。
 - 默认不修改原文章，也不会覆盖已经生成的图片。
-- 所有人物共用 `jinchenma-surrealism` 文章插图画风。
+- 默认使用 `jinchenma-3d`；明确选择时使用 `jinchenma-surrealism`。
+- 人物版本与画风分开管理；各画风独立保存规范、提示模板、配色及样图，Skill 入口负责选择。
+- 每次未指定风格时回到默认 3D，上一任务的旧版选择不会自动沿用。
 
 ## 安装
 
@@ -84,6 +102,17 @@ https://github.com/jinchenma94/jinchenma-ip-skills
 ```
 
 第一次使用时，Skill 会询问是否更换为自己的 IP 形象。选择暂不更换即可使用内置金尘马。
+
+### 明确使用旧版
+
+```text
+使用 jinchenma-ip-article-illustrations，采用旧版 2D 超现实隐喻风格，为以下正文配图：
+<正文>
+```
+
+“3D”“新画风”或不指定风格均使用默认。人物包的旧 `style` 字段不自动激活旧画风。
+
+运行目录分开维护：`assets/ip-packs/jinchenma/variants/3d/`、`variants/2d/` 保存人物版本；`assets/style-packs/jinchenma-3d/`、`jinchenma-surrealism/` 保存完整画风；`scripts/resolve_visuals.py` 可只读核验本次解析。
 
 ### 创建并使用自己的个人 IP
 

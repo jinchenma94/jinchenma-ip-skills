@@ -2,7 +2,7 @@
 
 [中文文档](README.md)
 
-Use one consistent, reusable character IP to give your articles a recognizable surrealist illustration identity.
+Use one consistent, reusable character IP for recognizable article illustrations. Soft dimensional 3D is the default; the original 2D surrealist style is preserved and available on explicit request.
 
 This repository contains two Agent Skills that work independently or together. You can illustrate an article immediately with the bundled 金尘马 character, or create your own character from a portrait and make it the recurring figure in your articles.
 
@@ -12,11 +12,21 @@ This repository contains two Agent Skills that work independently or together. Y
 
 `jinchenma-ip-builder` turns a character into a consistent front, side, and back turnaround that provides a stable reference for future generations.
 
-![Front, side, and back turnaround of the 金尘马 character IP](skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png)
+![Front, side, and back turnaround of the 金尘马 character IP](skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/turnaround.png)
 
 ### Article Illustrations
 
-`jinchenma-ip-article-illustrations` uses the same 金尘马 character to turn article ideas into restrained illustrations built around clear surreal relationships.
+`jinchenma-ip-article-illustrations` defaults to soft dimensional forms, matte materials, white space, and a restrained palette.
+
+![3D: Write an idea](skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/01-write-an-idea.png)
+
+![3D: Build a prototype](skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/02-build-a-prototype.png)
+
+![3D: Observe a floating book](skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/03-observe-a-floating-book.png)
+
+### Preserved Legacy 2D Examples
+
+These original assets and rules remain available on explicit request.
 
 <table>
   <tr>
@@ -28,6 +38,12 @@ This repository contains two Agent Skills that work independently or together. Y
     <td width="50%"><img src="docs/images/jinchenma-article-illustration-answer-knowledge-loop.png" alt="金尘马 article illustration about one answer and long-term knowledge accumulation"></td>
   </tr>
 </table>
+
+## Approved Visual Direction and Process Records
+
+The [3D visual and palette candidate v1](docs/visual-directions/20261001-3d-v1/README.md) includes character images, a turnaround, a scene study, a standalone palette, and a [browser preview](docs/visual-directions/20261001-3d-v1/preview.html). These dimensional 2D PNG illustrations have been approved and promoted to the default character and style. The process records remain available.
+
+The [editorial illustration style samples v1](docs/visual-directions/20261001-illustration-style-v1/README.md) test visual consistency across three scenes. Compare them in the [sample preview](docs/visual-directions/20261001-illustration-style-v1/preview.html).
 
 ## Two Ways to Use the Skills
 
@@ -61,7 +77,9 @@ Your character can be reused across articles or switched at any time. Switching 
 - Preserves the character's appearance, clothing, accessories, and signature features.
 - Supports both the bundled 金尘马 character and your own character IPs.
 - Leaves the source article unchanged by default and never overwrites existing images.
-- Uses the shared `jinchenma-surrealism` editorial illustration style for every character.
+- Defaults to `jinchenma-3d`; `jinchenma-surrealism` requires an explicit choice.
+- Keeps character variants and illustration styles separate; each style has its own rules, prompt template, palette when applicable, and examples.
+- A previous legacy selection does not carry into a new request that omits the style.
 
 ## Installation
 
@@ -84,6 +102,15 @@ Use jinchenma-ip-article-illustrations. Read the complete article and generate t
 ```
 
 On first use, the Skill asks whether you want to switch to your own character IP. Skip the switch to continue with the bundled 金尘马 character.
+
+### Select the Legacy Style Explicitly
+
+```text
+Use jinchenma-ip-article-illustrations with the legacy 2D surrealist style:
+<article text>
+```
+
+Omitting the style, or requesting 3D, uses the new default. An old IP manifest's `style` field does not select the illustration style. Character variants live under `assets/ip-packs/jinchenma/variants/`; independent style packs live under `assets/style-packs/`. The read-only `scripts/resolve_visuals.py` verifies the selection.
 
 ### Create and Use Your Own Character IP
 

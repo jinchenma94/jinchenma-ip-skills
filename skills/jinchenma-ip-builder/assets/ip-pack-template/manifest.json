@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "<ip-id>",
   "displayName": "<display-name>",
-  "style": "jinchenma-surrealism",
+  "rendering": "3d",
   "assets": {
     "turnaround": "assets/turnaround.png"
   },

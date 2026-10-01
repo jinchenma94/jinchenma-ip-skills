@@ -36,10 +36,10 @@ Builder 根目录保存可携带 IP 包；文章人物 IP 和当前人物配置�
 
 ```json
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "alex-creator",
   "displayName": "Alex Creator",
-  "style": "jinchenma-surrealism",
+  "rendering": "3d",
   "assets": {
     "turnaround": "assets/turnaround.png"
   },
@@ -50,9 +50,9 @@ Builder 根目录保存可携带 IP 包；文章人物 IP 和当前人物配置�
 
 规则：
 
-- `schemaVersion` 当前为 `1`。
+- 新包 `schemaVersion` 为 `2`；文章 Skill 仍能导入已有版本 `1` 的包。
 - `id` 是人物的 `ip-id`，必须与包目录名一致。
-- `style` 描述文章插图艺术风格，不是人物身份；自定义包默认使用 `jinchenma-surrealism`。
+- `rendering` 如实描述本包参考表现，默认 `3d`，明确旧版可用 `2d`；人物包不选择文章画风。旧版 `style` 仅作为历史元数据，不激活旧画风。
 - `assets.turnaround` 和 `characterSpec` 只使用相对于当前包目录的路径。
 - 拒绝绝对路径、`..` 路径穿越，以及解析后离开包目录的符号链接。
 - `license` 对自定义包默认为 `private`；不得自动继承 Jinchenma 默认资产的 CC BY 4.0。

@@ -18,7 +18,7 @@
             └── character-spec.md
 ```
 
-内置默认 IP 位于 Skill 自身的 `assets/ip-packs/jinchenma/`，不需要复制到文章人物主目录。
+内置 IP 位于 Skill 自身的 `assets/ip-packs/jinchenma/`，不需要复制到文章人物主目录。`variants/3d/` 与 `variants/2d/` 独立保存人物参考和规范；默认 3D，明确旧版时选择 2D。根目录旧三视图与旧规范仅作为兼容历史资料保留，运行时按 manifest 选择。
 
 运行时人物统一保存在文章 Skill 的 `ips/`。Builder 目录中的完整 IP 包经过用户选择后复制为文章人物 IP。Builder 和文章 Skill 都使用 `ip-id` 作为人物唯一标识。
 
@@ -82,7 +82,7 @@ Builder 主目录固定为 `~/.agents/jinchenma-ip-builder`。
 
 1. 检查文件存在、可读，三视图是支持的图片格式，文字规范包含角色定位、固定身份、服装配件、允许变化、禁止漂移、提示词片段和检查清单。
 2. 在文章 Skill 的目标人物 IP 中使用标准相对路径。
-3. 创建 `manifest.json`，设置 `style: jinchenma-surrealism`。没有明确来源许可时使用 `license: private`；来源文件或用户明确提供有效许可与署名时如实保留，不把已有公开许可重新标记为 private。
+3. 创建 `schemaVersion: 2` 的 `manifest.json`，`rendering` 如实记录人物参考表现；不在人物包指定文章画风。没有明确来源许可时使用 `license: private`；来源文件或用户明确提供有效许可与署名时如实保留，不把已有公开许可重新标记为 private。
 4. 只复制三视图和文字规范，不复制原始照片、同目录其他文件或本机路径记录。
 5. 验证目标人物 IP 后再激活。
 
@@ -109,10 +109,10 @@ Builder 主目录固定为 `~/.agents/jinchenma-ip-builder`。
 
 ```json
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "example-ip",
   "displayName": "Example IP",
-  "style": "jinchenma-surrealism",
+  "rendering": "3d",
   "assets": {
     "turnaround": "assets/turnaround.png"
   },
@@ -123,12 +123,12 @@ Builder 主目录固定为 `~/.agents/jinchenma-ip-builder`。
 
 验证规则：
 
-- 必需字段存在，类型正确，`schemaVersion` 为 `1`。
+- 必需字段存在、类型正确；新包 `schemaVersion` 为 `2`，兼容已有 `1` 版包。`config.json` 仍为版本 `1`。
 - `manifest.id` 是人物的 `ip-id`，必须与人物 IP 目录名一致。
-- `style` 为 `jinchenma-surrealism`；它表示文章艺术风格，不表示人物身份。
+- 新包 `rendering` 描述参考表现，文章画风由独立风格包选择。旧版 `style` 仅为历史元数据，不参与默认画风解析。
 - `assets.turnaround` 和 `characterSpec` 是相对于人物 IP 目录的路径。
 - 拒绝绝对路径、`..` 路径穿越和解析后离开当前人物 IP 目录的符号链接。
-- 两个目标文件必须存在且可读。
+- 参考图与规范必须存在且可读。内置包 `defaultVariant` 和 `variants` 允许独立版本；选中版本资源同样满足包边界规则。
 - 自定义 IP 在没有明确来源许可时默认 `license: private`，不自动继承内置包的 CC BY 4.0，也不覆盖外部素材已有的明确许可与署名。
 
 ## 解析与运行提示
@@ -140,12 +140,12 @@ Builder 主目录固定为 `~/.agents/jinchenma-ip-builder`。
 3. 其他值只从 `<article-home>/ips/<activeIp>/` 读取。
 4. 无效时提示并为本次任务回退到内置金尘马。
 
-选定后只加载当前人物 IP 的三视图和角色规范。视觉生成工具支持参考图片时，直接传入 `assets.turnaround`；三视图中的三个人形是同一角色的三个角度。
+选定后按 `illustration-style.md` 解析本次画风与人物版本，只加载当前 IP 本次版本的三视图和规范。支持参考图时传入解析后的三视图。自定义单版本包使用现有参考，不自动改成金尘马或声称已有 3D 三视图。
 
 在开始生成文章插图前输出中间提示：
 
 ```text
-当前使用 IP：<displayName> (<ip-id>)
+当前使用 IP：<displayName> (<ip-id>)；人物版本：<实际版本>；插图画风：<style-id>
 ```
 
 ## 隔离与隐私

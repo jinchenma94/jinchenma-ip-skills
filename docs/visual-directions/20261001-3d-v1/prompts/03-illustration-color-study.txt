@@ -1,0 +1,13 @@
+Reference bindings for reuse (paths relative to this prompt file):
+Input image 1: ../../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png
+Palette: ../palette.json
+Record note: the body below preserves the generation brief with palette wording localized. The bindings above were added during migration for self-contained reuse; historical input file hashes were not recorded. These bindings do not prove byte-for-byte identity with the original inputs.
+
+--- Generation brief ---
+
+Use case: illustration-story. Asset: Jinchenma 3D personal-brand palette study for editorial article illustrations.
+Input image 1 is the selected clean 3D identity reference ONLY. Use the same face, adult body proportions, hairstyle, rectangular sunglasses, dark botanical shirt, gold/green matching knee-length shorts, LEFT-WRIST black rounded-rectangle watch and black wide one-band slide sandals.
+Create a single uncluttered wide 16:9 editorial illustration on a pure white page. Jinchenma is actively organizing notes at a small cream-colored work surface: he inserts one gold note card into a green folder, with a closed cyan notebook nearby. Show the folder opening, the hand inserting the card and the neatly collected contents so the action and its result are easy to recognize. No ornate sorting machine or symbolic puzzle. One character, one clear action, two or three useful main props, substantial white space around the central scene. Full character visible, standing naturally, arms and fingers plausible, watch on his anatomical LEFT wrist.
+Use the same gentle dimensional illustrated volumes and matte surfaces as input 1, soft controlled shading, adult proportions and warm friendly expression. Do not copy input 1's pose, cutout background or layout. Avoid photoreal humans, toy proportions, enlarged heads, heavy comic outlines, glossy plastic and deep cinematic light.
+Palette base colors from this candidate palette: ink #1A1A1A, gold #F7C948, green #1F8F4B, cyan #2EC4C7, orange #FF8A3D, cream #F8F6F1. Ink/gold/green maintain the character identity. Gold note card and green folder are the dominant props, cyan notebook is a restrained secondary accent, cream table and paper surfaces are neutral. Orange can appear as a tiny tab only if useful. Keep skin natural, allow normal tints/shades, never force all six colors to compete. Background remains pure white; clothing botanical motifs do not become tropical scenery.
+No text, logos, UI screenshots, brand names, title, frames, watermarks, floating graphics or invented product data. This image is a color/material test of an ordinary creator action, not a real-product result or an infographic.

@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-01",
+  "status": "approved-and-promoted",
+  "generator": "built-in image_gen",
+  "selected_clean_reference": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+  "palette_source": "palette.json",
+  "assets": [
+    {
+      "file": "history/character-clean.png",
+      "sha256": "60ebb8c9face0f6178b2ebff3019c7b0dfcd166612a93231c520a69f7c404a0d",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1167102,
+      "role": "process-history",
+      "border_nontransparent_pixels": 0
+    },
+    {
+      "file": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+      "sha256": "c69884582a2ab25af5d5fd0067ddbf944fceabebced60114ecd95f35665cc765",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1171460,
+      "role": "candidate",
+      "border_nontransparent_pixels": 0
+    },
+    {
+      "file": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/turnaround.png",
+      "sha256": "d58bfd922968a16d27e3886700d570130059f383295e01bfc248cd65a404c407",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "role": "candidate"
+    },
+    {
+      "file": "illustration-color-study.png",
+      "sha256": "a3f1e5ba1dd2e8ff0e5576981dac0bd405a3c82f36b219a37e80a29b2703c573",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "role": "candidate"
+    }
+  ],
+  "review": {
+    "identity": "原有成年比例、黑发、方框墨镜、花衬衫与短裤保持可识别；非三维模型。",
+    "accessories": "三视图与配色样图的手表均位于人物本人的左腕；鞋子为黑色单带一字拖。",
+    "palette": "人物采用黑、金黄、绿及少量橙；场景采用金黄卡片、绿色文件夹、青色笔记本、奶油白桌面。",
+    "transparency": "单人物 PNG 带 alpha 通道，采样背景为 alpha=0；主体最大 alpha=254，近全不透明。原始 RGB 中有背景色，但浏览器透明合成使用 alpha。",
+    "limitations": [
+      "具体3D表现与配色尚未获用户采用确认。",
+      "服装纹样随角度有生成性变化，未逐像素锁定。",
+      "色值为材质基色目标，不声称渲染像素完全精确。",
+      "历史记录未保存输入图片哈希；迁入时添加的仓库内输入绑定不证明原始输入逐字节一致。",
+      "目前表情较年轻、发丝和服装细节偏写实，成熟松弛感是否达标仍需用户判断。"
+    ],
+    "transparency_browser_check": "Browser alpha composition on white shows clean silhouette without the broad hidden-RGB glow; verified at full-size page and 192px-high preview.",
+    "small_size": "At 192px character height, silhouette and outfit colors remain identifiable; garment detail merges. At 480px scene width, card insertion and folder remain readable; full garment patterns still visually dense."
+  },
+  "default_character_replaced": true,
+  "identity_basis": {
+    "turnaround": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png",
+    "character_spec": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/references/character-spec.md",
+    "role": "repository identity baseline for review and reuse",
+    "historical_input_hash_verified": false
+  },
+  "generations": [
+    {
+      "sequence": 1,
+      "revision": "initial-character",
+      "prompt": "prompts/01-character-clean.txt",
+      "output": "history/character-clean.png",
+      "reference_images": [
+        "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png"
+      ],
+      "reference_binding_status": "repository-local reuse binding; historical input hashes unavailable",
+      "transparent_background": true
+    },
+    {
+      "sequence": 2,
+      "revision": "background-alpha-revision",
+      "prompt": "prompts/01-character-clean-v2.txt",
+      "output": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+      "reference_images": [
+        "history/character-clean.png"
+      ],
+      "reference_binding_status": "repository-local reuse binding; historical input hashes unavailable",
+      "transparent_background": true
+    },
+    {
+      "sequence": 3,
+      "revision": "multi-view-study",
+      "prompt": "prompts/02-character-turnaround.txt",
+      "output": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/turnaround.png",
+      "reference_images": [
+        "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+        "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png"
+      ],
+      "reference_binding_status": "repository-local reuse binding; historical input hashes unavailable",
+      "transparent_background": false
+    },
+    {
+      "sequence": 4,
+      "revision": "scene-palette-study",
+      "prompt": "prompts/03-illustration-color-study.txt",
+      "output": "illustration-color-study.png",
+      "reference_images": [
+        "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png"
+      ],
+      "reference_binding_status": "repository-local reuse binding; historical input hashes unavailable",
+      "transparent_background": false
+    }
+  ],
+  "migration": {
+    "date": "2026-10-01",
+    "method": "one-time copy of the four generated PNGs; documentation and records rewritten for repository-local review",
+    "png_bytes_preserved": true,
+    "prompt_changes": "Added local reference bindings and localized palette wording; generation brief otherwise preserved.",
+    "source_files_retained": true,
+    "external_dependencies": false,
+    "review_approved": false,
+    "verification": {
+      "png_decode_and_sha256": "passed for all four PNGs",
+      "prompt_reference_paths": "all resolve inside repository",
+      "preview_resource_paths": "all resolve inside repository; no remote resources",
+      "private_path_and_external_reference_scan": "passed for all public text files",
+      "symlinks": "none"
+    }
+  },
+  "state_at_generation": {
+    "status": "candidate-unapproved",
+    "default_character_replaced": false,
+    "default_style_replaced": false
+  },
+  "promotion": {
+    "approval_source": "user confirmation in this conversation",
+    "character_default": "3d",
+    "illustration_style_default": "jinchenma-3d",
+    "legacy_preserved": true,
+    "installed_asset_root": "../../../skills/jinchenma-ip-article-illustrations/assets"
+  },
+  "default_style_replaced": true,
+  "asset_storage": {
+    "policy": "single canonical copy of approved character and style examples inside the Skill; process-specific assets retained here",
+    "references_updated": "repository-relative paths; PNG bytes and hashes unchanged"
+  }
+}

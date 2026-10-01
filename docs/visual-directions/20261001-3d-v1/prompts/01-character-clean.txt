@@ -1,0 +1,16 @@
+Reference bindings for reuse (paths relative to this prompt file):
+Input image 1: ../../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/assets/turnaround.png
+Palette: ../palette.json
+Record note: the body below preserves the generation brief with palette wording localized. The bindings above were added during migration for self-contained reuse; historical input file hashes were not recorded. These bindings do not prove byte-for-byte identity with the original inputs.
+
+--- Generation brief ---
+
+Use case: stylized-concept.
+Asset type: Jinchenma personal brand 3D visual direction, clean full-body identity reference, version 1.
+Input image 1 is IDENTITY AND PROPORTIONS REFERENCE ONLY: the existing front/side/back sheet shows ONE SAME adult male character, not three people.
+Primary request: create ONE full-body, lightly three-dimensional editorial character of exactly this Jinchenma, on a genuinely transparent background. Preserve his adult age, slim-average build, face silhouette, warm natural skin tone, black tousled short hair with irregular fringe, and existing adult head-to-body ratio (roughly 6.5–7 heads tall). Natural friendly subtle smile. Front-facing with a slight three-quarter turn, arms relaxed and separated enough to read the hands.
+Keep dark rectangular sunglasses, relaxed short-sleeve botanical patterned shirt, matching knee-length patterned shorts, black rounded rectangular smartwatch ONLY on the CHARACTER'S OWN LEFT wrist, and black wide SINGLE-STRAP slide sandals with visible toes and open heels. Sandals must have no thong or Y strap.
+Style: dimensional illustrated volumes, carefully shaped simple forms, quiet soft light, fine matte surfaces, restrained material differences, a mature friendly creator. Clearly 3D-feeling illustrated appearance with smooth form shading; no bold black comic outlines. Preserve adult proportions: no enlarged head, stubby legs, toy/doll, chibi or clay/plush appearance. Not a photographic human.
+Color design: use this candidate palette as material BASE COLORS: ink #1A1A1A, gold #F7C948, green #1F8F4B, cyan #2EC4C7, orange #FF8A3D, cream #F8F6F1. Shirt is dark ink with recognizable but simplified larger gold and green botanical shapes, a very few small orange flower accents. Shorts retain their gold/yellow-green character, using gold and green motifs matching the shirt. Sunglasses/watch/slides remain ink-black. Skin remains natural, not constrained to the palette. Lighting produces natural tints and shades. Do not force cyan or cream into the clothes; these colors are available for later props.
+Composition: one complete character centered, head and feet uncropped, ample clear margin, clean silhouette. Transparent background, no floor, pedestal, frame, text, labels, logo, watermark, extra people or props. The botanical motif belongs ONLY to clothing and does not become tropical scenery.
+This is a new 3D exploration of the user's own existing character; do not borrow any other artist's character identity, branded assets, or their specific scene composition.

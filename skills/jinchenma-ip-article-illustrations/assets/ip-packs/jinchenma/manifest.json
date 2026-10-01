@@ -1,14 +1,31 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "jinchenma",
   "displayName": "金尘马 Jinchenma",
-  "style": "jinchenma-surrealism",
   "assets": {
-    "turnaround": "assets/turnaround.png"
+    "turnaround": "variants/3d/assets/turnaround.png",
+    "reference": "variants/3d/assets/character.png"
   },
-  "characterSpec": "references/character-spec.md",
+  "characterSpec": "variants/3d/references/character-spec.md",
   "license": "CC-BY-4.0",
   "attribution": {
     "name": "金尘马 or Jinchenma"
+  },
+  "rendering": "3d",
+  "defaultVariant": "3d",
+  "variants": {
+    "3d": {
+      "assets": {
+        "turnaround": "variants/3d/assets/turnaround.png",
+        "reference": "variants/3d/assets/character.png"
+      },
+      "characterSpec": "variants/3d/references/character-spec.md"
+    },
+    "2d": {
+      "assets": {
+        "turnaround": "variants/2d/assets/turnaround.png"
+      },
+      "characterSpec": "variants/2d/references/character-spec.md"
+    }
   }
 }

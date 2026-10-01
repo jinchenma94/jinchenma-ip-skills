@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-01",
+  "status": "approved-and-promoted",
+  "purpose": "editorial illustration visual style test only",
+  "generator": "built-in image_gen",
+  "default_character_replaced": true,
+  "default_style_replaced": true,
+  "article_workflow_modified": false,
+  "palette_source": "../20261001-3d-v1/palette.json",
+  "reference_images": [
+    {
+      "file": "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+      "role": "character identity and proportions",
+      "sha256": "c69884582a2ab25af5d5fd0067ddbf944fceabebced60114ecd95f35665cc765"
+    },
+    {
+      "file": "../20261001-3d-v1/illustration-color-study.png",
+      "role": "material, light and color style only",
+      "sha256": "a3f1e5ba1dd2e8ff0e5576981dac0bd405a3c82f36b219a37e80a29b2703c573"
+    }
+  ],
+  "generations": [
+    {
+      "id": "01-write-an-idea",
+      "revision": 1,
+      "file": "../../../skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/01-write-an-idea.png",
+      "prompt": "prompts/01-write-an-idea.txt",
+      "prompt_sha256": "e013b2f59f091abb464517c43e689050ec219fd1d7e11f9e3e2ec5a9d2953765",
+      "sha256": "f74de85029d2a01130e4603eb98c342a1f2fc4d8875d782698e51f8f15624e9f",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "border_pixels_rgb_at_least_245_fraction": 1.0,
+      "tool_options": {
+        "transparent_background": false,
+        "referenced_image_paths": [
+          "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+          "../20261001-3d-v1/illustration-color-study.png"
+        ]
+      },
+      "review": {
+        "pose_and_action": "坐姿自然，右手铅笔接触本子，左手扶纸；草图为几何图形，无可读文字。",
+        "accessories": "黑色圆角矩形手表位于人物左腕；双脚穿宽面单带一字拖。",
+        "props": "奶油白桌、黑椅、青色本子与金色铅笔，人物和物件均带柔和立体感。",
+        "limits": [
+          "桌面遮住部分短裤与座椅结构；关键写画动作可见。",
+          "与其他样图一样，人物和物件纵向占比偏大。"
+        ]
+      }
+    },
+    {
+      "id": "02-build-a-prototype",
+      "revision": 1,
+      "file": "../../../skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/02-build-a-prototype.png",
+      "prompt": "prompts/02-build-a-prototype.txt",
+      "prompt_sha256": "9f90245fd22497b09cbc778f6a2f0e85cae0284b6b58606fee3bdaa87d86201c",
+      "sha256": "f400e68bca94738da448ffda7788e4afdb5fa765b28b9f7cf71c50a86a22c624",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "border_pixels_rgb_at_least_245_fraction": 1.0,
+      "tool_options": {
+        "transparent_background": false,
+        "referenced_image_paths": [
+          "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+          "../20261001-3d-v1/illustration-color-study.png"
+        ]
+      },
+      "review": {
+        "pose_and_action": "蹲姿及三块结构清楚，双手接触绿色横梁两端；横梁已经接近或落在支撑上，静态图无法严格区分正在落下和完成放置。",
+        "accessories": "左腕黑色圆角矩形手表可见；鞋为黑色宽面单带一字拖。",
+        "props": "两根金黄支撑和一根绿色横梁，拱下空隙清楚，无额外零件。",
+        "limits": [
+          "物件略有高光，整体仍接近柔和哑光表现。",
+          "三块模型呈积木感；是否符合成熟创作者场景需用户判断。"
+        ]
+      }
+    },
+    {
+      "id": "03-observe-a-floating-book",
+      "revision": 1,
+      "file": "../../../skills/jinchenma-ip-article-illustrations/assets/style-packs/jinchenma-3d/examples/03-observe-a-floating-book.png",
+      "prompt": "prompts/03-observe-a-floating-book.txt",
+      "prompt_sha256": "1b32d2c64406b3fdf29b9726875c3d05dfd9fbe1a029cdf228b73a23ece607da",
+      "sha256": "36bea04278f3575ef06170a5e50484c45ef47aa3c732b50342bcb6efaf33cc03",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "border_pixels_rgb_at_least_245_fraction": 1.0,
+      "tool_options": {
+        "transparent_background": false,
+        "referenced_image_paths": [
+          "../../../skills/jinchenma-ip-article-illustrations/assets/ip-packs/jinchenma/variants/3d/assets/character.png",
+          "../20261001-3d-v1/illustration-color-study.png"
+        ]
+      },
+      "review": {
+        "pose_and_action": "站姿、转头看书和抬右手动作清楚；书本与手有空隙，无可见支撑，悬浮关系可读。",
+        "accessories": "左腕黑色圆角矩形手表可见；双脚穿宽面单带一字拖。",
+        "props": "金黄色书皮、奶油白页、青色书签；没有附加光效或神秘背景。",
+        "limits": [
+          "人物接近纵向满高，上下留白较少。",
+          "单图只测试概念场景画风，不能证明特定文章隐喻准确。"
+        ]
+      }
+    }
+  ],
+  "review": {
+    "status": "visual-inspection-complete; user evaluation pending",
+    "overall": "三张均为同一人物的柔和立体插图，物件风格与人物基本协调，白底和有限配色保持一致。",
+    "limitations": [
+      "人物服装纹样依然较密，各图纹样存在生成性变化。",
+      "当前输出纵向主体偏满，后续正式文章构图可能需要更多上下留白。",
+      "颜色为材质基色目标，未声称渲染像素逐点符合六个色值。",
+      "三张均无文字，尚未检验文章短标签或复杂多人关系。"
+    ],
+    "small_size_browser": "浏览器中三张均以320 px宽显示：写画、搭建结构和观察悬浮书的动作仍可识别；铅笔尖和纸面草图细节较弱，服装纹样并成色块。此结果不证明更小尺寸或复杂文字插图的可读性。"
+  },
+  "verification": {
+    "png_decode_and_sha256": "passed",
+    "prompt_hashes": "passed",
+    "reference_hashes": "passed",
+    "preview_assets": "all loaded in browser; all resolve within repository",
+    "public_candidate_text_scan": "no private paths or external resource-system references",
+    "symlinks": "none",
+    "small_preview_width_px": 320
+  },
+  "state_at_generation": {
+    "status": "candidate-unapproved",
+    "default_character_replaced": false,
+    "default_style_replaced": false
+  },
+  "promotion": {
+    "approval_source": "user confirmation in this conversation",
+    "character_default": "3d",
+    "illustration_style_default": "jinchenma-3d",
+    "legacy_preserved": true,
+    "installed_asset_root": "../../../skills/jinchenma-ip-article-illustrations/assets"
+  },
+  "asset_storage": {
+    "policy": "single canonical copy of approved character and style examples inside the Skill; process-specific assets retained here",
+    "references_updated": "repository-relative paths; PNG bytes and hashes unchanged"
+  }
+}

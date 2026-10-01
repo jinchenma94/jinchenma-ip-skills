@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "jinchenma-surrealism",
+  "displayName": "旧版 2D 超现实隐喻插图",
+  "defaultCharacterVariant": "2d",
+  "rendering": "hand-drawn-comic",
+  "styleSpec": "references/style.md",
+  "promptTemplate": "references/prompt-template.md",
+  "examples": [
+    "examples/jinchenma-article-illustration-agent-real-task.png",
+    "examples/jinchenma-article-illustration-answer-knowledge-loop.png",
+    "examples/jinchenma-article-illustration-capability-and-time.png",
+    "examples/jinchenma-article-illustration-career-next-step.png"
+  ]
+}

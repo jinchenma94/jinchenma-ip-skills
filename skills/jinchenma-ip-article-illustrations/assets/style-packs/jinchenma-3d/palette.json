@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "jinchenma-3d-palette-v1",
+  "status": "active",
+  "colors": [
+    {
+      "id": "ink",
+      "name": "黑",
+      "hex": "#1A1A1A",
+      "use": "墨镜、手表、一字拖、衣服底色和必要结构"
+    },
+    {
+      "id": "gold",
+      "name": "金黄",
+      "hex": "#F7C948",
+      "use": "人物识别和必要的突出物件"
+    },
+    {
+      "id": "green",
+      "name": "绿",
+      "hex": "#1F8F4B",
+      "use": "人物纹样与辅助道具"
+    },
+    {
+      "id": "cyan",
+      "name": "青",
+      "hex": "#2EC4C7",
+      "use": "必要的工作道具"
+    },
+    {
+      "id": "orange",
+      "name": "橙",
+      "hex": "#FF8A3D",
+      "use": "少量点缀"
+    },
+    {
+      "id": "cream",
+      "name": "奶油白",
+      "hex": "#F8F6F1",
+      "use": "纸张和中性物件"
+    }
+  ],
+  "candidate_colors": [
+    {
+      "id": "sky-blue",
+      "name": "蓝天蓝",
+      "hex": "#4A90E2",
+      "status": "candidate-unapproved",
+      "proposed_by": "assistant",
+      "note": "用户同意列为候选；此色值为新提案，未确认是历史品牌蓝。",
+      "use": "内容需要时用于天空、水面或必要道具，保持白底留白。"
+    }
+  ],
+  "rules": {
+    "skin": "自然肤色，允许合理光照明暗",
+    "background": "#FFFFFF",
+    "all_colors_required": false,
+    "fixed_concept_semantics": false,
+    "rendered_pixels_must_equal_base_colors": false
+  }
+}

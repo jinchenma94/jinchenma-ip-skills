@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "jinchenma-3d",
+  "displayName": "柔和 3D 插图",
+  "defaultCharacterVariant": "3d",
+  "rendering": "dimensional-matte",
+  "styleSpec": "references/style.md",
+  "promptTemplate": "references/prompt-template.md",
+  "examples": [
+    "examples/01-write-an-idea.png",
+    "examples/02-build-a-prototype.png",
+    "examples/03-observe-a-floating-book.png"
+  ],
+  "palette": "palette.json"
+}
